@@ -25,12 +25,12 @@ variable "instance_type" {
 
 variable "ami_id" { 
     description = "AMI for Ubuntu Ec2 instance" 
-    default     = "ami-0ee23bfc74a881de5" 
+    default     = "ami-0ad21ae1d0696ad58" 
 }
 
 variable "tag_name" { 
     description = "Tag Name of for Ec2 instance" 
-    default     = "my-ec2-instance" 
+    default     = "terra-jenkins-ec2" 
 }
 
 
