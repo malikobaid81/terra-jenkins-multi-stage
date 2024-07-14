@@ -3,6 +3,11 @@ variable "aws_region" {
        default     = "ap-south-1" 
 }
 
+variable "vpc_name" {
+       description = "The AWS region to create things in." 
+       default     = "terra-jenkins-vpc" 
+}
+
 variable "key_name" { 
     description = " SSH keys to connect to ec2 instance" 
     default     =  "terra-jenkins-key" 
