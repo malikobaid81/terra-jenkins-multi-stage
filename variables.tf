@@ -8,6 +8,11 @@ variable "vpc_name" {
        default     = "terra-jenkins-vpc" 
 }
 
+variable "security_group" { 
+    description = "Name of security group" 
+    default     = "terra-jenkins-SG" 
+} 
+
 variable "key_name" { 
     description = " SSH keys to connect to ec2 instance" 
     default     =  "terra-jenkins-key" 
@@ -28,7 +33,4 @@ variable "tag_name" {
     default     = "my-ec2-instance" 
 }
 
-variable "security_group" { 
-    description = "Name of security group" 
-    default     = "terra-jenkins-SG" 
-} 
+
