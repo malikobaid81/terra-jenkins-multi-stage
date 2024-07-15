@@ -4,7 +4,7 @@ variable "aws_region" {
 }
 
 variable "vpc_name" {
-       description = "The AWS region to create things in." 
+       description = "The AWS vpc to create." 
        default     = "terra-jenkins-vpc" 
 }
 
