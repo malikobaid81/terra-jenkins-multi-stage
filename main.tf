@@ -46,7 +46,6 @@ resource "aws_security_group" "terra-jenkins-sg" {
 # create ec2 instance
 resource "aws_instance" "terra-jenkins-instance" {
   ami           = var.ami_id
-  key_name = var.key_name
   instance_type = var.instance_type
   vpc_security_group_ids = [aws_security_group.terra-jenkins-sg.id]
   tags= {
